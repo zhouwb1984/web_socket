@@ -23,6 +23,7 @@
         }
         websocket.onclose = function (ev) {
             log("Disconnected!")
+            log("close.wasClean" + ev.wasClean)
         }
         websocket.onmessage = function (ev) {
             log("Message received:" + ev.data);

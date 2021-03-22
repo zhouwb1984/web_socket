@@ -19,7 +19,7 @@
         websocket = new WebSocket("ws://echo.websocket.org/echo");
         websocket.onopen = function (ev) {
             log("Connected!");
-            send("hello webSocket!");
+            send("你好 webSocket, 123.");
         }
         websocket.onclose = function (ev) {
             log("Disconnected!")
